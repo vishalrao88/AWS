@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  lamby:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: lamby
+      Description: ''
+      Handler: index.handler
+      MemorySize: 1024
+      Role: 'arn:aws:iam::931718510991:role/service-role/lamby-role-44l410dh'
+      Runtime: nodejs12.x
+      Timeout: 5
